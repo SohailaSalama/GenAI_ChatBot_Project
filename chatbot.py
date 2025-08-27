@@ -138,10 +138,9 @@ def get_or_set_user(resp):
 
 @app.get("/")
 def index():
-    resp = make_response(render_template("D:\CHATBOT PROJCT\index.html"))
+    resp = make_response(render_template("index.html"))
     get_or_set_user(resp)
     return resp
-
 
 
 
